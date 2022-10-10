@@ -4,24 +4,65 @@
   --dark-gold: #d3ad69;
   --gray: #222;
   --brown: #1f1b1c;
+
+  --font: 'Philosopher', sans-serif;
+  --font-regular: 400;
+  --font-bold: 700;
 }
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--font);
+  font-weight: var(--font-regular);
+}
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
 .top{
-  height: 10vh;
+  top: 0;
+  height: 5vh;
+  background-color: var(--brown);
+  color: var(--gold);
+  padding: 0px 50px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: 1rem;
+}
+#contacts > a, #socials > a{
+  font-style: none;
+  text-decoration: none;
+  color: var(--gold);
+
+  transition: 0.2s linear;
+}
+#contacts >a:hover{
+  text-shadow: 0 0 5px var(--light-gold);
+}
+#phone{
+  margin-left: 10px;
+}
+#phone:hover{
+  text-shadow: 0 0 5px var(--light-gold);
+}
+#socials{
+  margin-left: auto;
+}
+#fb-top{
+  font-size: 1.5rem;
+}
+#fb-top:hover{
+  color:#4267B2;
 }
 
 @keyframes App-logo-spin {
