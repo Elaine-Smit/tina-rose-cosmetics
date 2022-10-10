@@ -22,8 +22,9 @@ h1, h2, h3, h4, h5, h6{
   text-align: center;
 }
 
-.App-header {
-
+.header {
+  display: flex;
+  flex-direction: column;
 }
 
 .top{
@@ -64,6 +65,47 @@ h1, h2, h3, h4, h5, h6{
 #fb-top:hover{
   color:#4267B2;
 }
+nav{
+  background-color: var(--dark-gold);
+  
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  
+}
+.tina-logo{
+  grid-column: 1 / span 1;
+
+  max-width: 150px;
+  position: absolute;
+  left: 5vw;
+  top: 8vh;
+}
+.top-menu{
+  grid-column: 2 / span 3;
+
+  list-style: none;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  font-size: 1.5rem;
+  font-family: var(--font);
+
+  height: auto;
+}
+.top-menu > li > a{
+  text-decoration: none;
+  color: var(--brown);
+  padding-bottom: 5px;
+
+  transition: 0.2s linear;
+}
+.top-menu > li > a:hover{
+  border-bottom: 1px solid var(--brown);
+  text-shadow: 0 0 5px var(--brown);
+}
+
 
 @keyframes App-logo-spin {
   from {

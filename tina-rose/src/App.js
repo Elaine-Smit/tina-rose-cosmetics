@@ -1,9 +1,10 @@
 import './App.css';
+import tinaLogo from "./images/logo/logo-text-dark.png"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="header">
         <div className="top">
           <p id="contacts">
             <a href="mailto:support@tinarose.co.za"><i class="fa-solid fa-envelope"></i> : support@tinarose.co.za </a>
@@ -16,10 +17,11 @@ function App() {
           </p>
         </div>
         <nav>
-          <ul className="">
-            <li>Welcome</li>
-            <li>Shop</li>
-            <li>Account</li>
+          <img src={tinaLogo} alt="Tina Rose Cosmetics logo" className="tina-logo"/>
+          <ul className="top-menu">
+            <li><a href="index">Welcome</a></li>
+            <li><a href="shop">Shop</a></li>
+            <li><a href="account">Account</a></li>
           </ul>
         </nav>
       </header>
