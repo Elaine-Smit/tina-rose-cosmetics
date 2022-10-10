@@ -1,16 +1,12 @@
+:root{
+  --light-gold: #fcf1db;
+  --gold: #ebd377;
+  --dark-gold: #d3ad69;
+  --gray: #222;
+  --brown: #1f1b1c;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,8 +20,8 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.top{
+  height: 10vh;
 }
 
 @keyframes App-logo-spin {
