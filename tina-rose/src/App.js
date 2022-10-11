@@ -2,6 +2,7 @@ import './App.css';
 import tinaLogo from "./images/logo/logo-text-dark.png"
 import Banner from "./components/Banner"
 import Agent from "./components/Agent"
+import Featured from "./components/Featured"
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       </header>
       <Banner />
       <Agent />
+      <Featured />
     </div>
   );
 }
